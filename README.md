@@ -62,14 +62,13 @@ The project consists of two main parts:
       python manage.py runserver
       ```
 7. Access the Application:- Open your web browser: 
-a) Go to `http://127.0.0.1:8000/admin/login/?next=/admin/` to access the Django admin page for my web app.
+    a) Go to `http://127.0.0.1:8000/admin/login/?next=/admin/` to access the Django admin page for my web app.
+       Credentials - username : your username
+                   - password : your password
 
-   Credentials - username : your username
-               - password : your password
+    b) `http://127.0.0.1:8000/` to access the Budget Speech analysis application.
 
-b) `http://127.0.0.1:8000/` to access the Budget Speech analysis application.
-
-8. Open the "TrendAnalysis.pbix" file in your Power BI desktop app, to access the Trend Analysis dashboard.
+9. Open the "TrendAnalysis.pbix" file in your Power BI desktop app, to access the Trend Analysis dashboard.
 ---
 ## Notes
 
