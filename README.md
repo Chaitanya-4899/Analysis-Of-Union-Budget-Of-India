@@ -1,6 +1,6 @@
 # Budget Speech Analysis Project
 
-This project is a interactive Budget speech data analysis platform, where insightful visualizations meet powerful analytics. This app enables you to explore, analyze, and understand complex budget data through intuitive visualizations, advanced sentiment analysis and text summarization tools. It also consists of an interactive Trend Analysis dashboard created on Power BI.
+This project is an interactive Budget speech data analysis platform, where insightful visualizations meet powerful analytics. This app enables you to explore, analyze, and understand complex budget data through intuitive visualizations, advanced sentiment analysis and text summarization tools. It also consists of an interactive Trend Analysis dashboard created on Power BI.
 
 ---
 
