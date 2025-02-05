@@ -62,6 +62,7 @@ The project consists of two main parts:
       python manage.py runserver
       ```
 7. Access the Application:- Open your web browser: 
+
     a) Go to `http://127.0.0.1:8000/admin/login/?next=/admin/` to access the Django admin page for my web app.
        Credentials - username : your_username
                    - password : your_password
