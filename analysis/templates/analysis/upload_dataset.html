@@ -1,0 +1,33 @@
+<!-- analysis/templates/analysis/upload_dataset.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {text-align: center;text-decoration-line: underline;background-color: #8ed4eb;}
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f1f1f1;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+    <title>Upload New Dataset</title>
+</head>
+<body>
+    <h1>Upload New Dataset</h1>
+    <p>Please upload the Budget speech pdf that you wish to analyse.</p>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Upload</button>
+    </form>
+    <br><br>
+    <a href="{% url 'home' %}">Back to Home</a>
+    <footer>
+        <p>&copy; {% now "Y" %} Chaitanya Pramod Ingle. All rights reserved.</p>
+    </footer>
+</body>
+</html>

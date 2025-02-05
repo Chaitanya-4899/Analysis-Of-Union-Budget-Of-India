@@ -1,0 +1,31 @@
+<!-- analysis/templates/analysis/result.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {text-align: center;text-decoration-line: underline;background-color: #8ed4eb;}
+    </style>
+    <title>Extracted Budget Allocations Result</title>
+</head>
+<body>
+    <h1>Extracted Budget Allocations Result</h1>
+    <ul>
+        {% for allocation in allocations %}
+            <li>{{ allocation }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'home' %}">Back to Home</a>
+
+    <!-- JavaScript to Hide Loader -->
+    <script>
+        window.onload = function() {
+            // Assuming the loader is still visible, hide it.
+            var loader = window.parent.document.getElementById('loader');
+            if (loader) {
+                loader.style.display = 'none';
+            }
+        };
+    </script>
+
+</body>
+</html>

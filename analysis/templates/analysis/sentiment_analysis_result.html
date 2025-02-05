@@ -1,0 +1,49 @@
+<!-- analysis/templates/analysis/sentiment_analysis_result.html -->
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {text-align: center;text-decoration-line: underline;background-color: #8ed4eb;}
+    </style>
+    <title>Sentiment Analysis Results</title>
+</head>
+<body>
+    <h1>Sentiment Analysis Results</h1>
+    <p>Polarity: {{ sentiment.polarity }}</p>
+    <p>Subjectivity: {{ sentiment.subjectivity }}</p>
+
+    <h2>Sentiment Polarity Distribution</h2>
+    <img src="{% static 'sentimentPolarityDistribution.png' %}" alt="Sentiment Polarity Distribution Plot">
+    
+    <h2>Word Cloud</h2>
+    <img src="{% static 'word_cloud.png' %}" alt="Word Cloud">
+
+    <h2>Top 20 Most Common Words</h2>
+    <img src="{% static 'word_frequency.png' %}" alt="Word Frequency Plot">
+
+    <h2>Top 20 Most Common Bigrams</h2>
+    <img src="{% static 'bigram_frequency.png' %}" alt="Bigram Frequency Plot">
+
+    <h2>Top 20 Words Contextual Polarities</h2>
+    <img src="{% static 'topWordsPolarities.png' %}" alt="Word Polarity Plot">
+
+    <h2>Top 20 Bigrams Contextual Polarities</h2>
+    <img src="{% static 'topBigramsPolarities.png' %}" alt="Bigram Polarity Plot">
+
+    <br><br>
+    <a href="{% url 'home' %}">Back to Home</a>
+
+    <!-- JavaScript to Hide Loader -->
+    <script>
+        window.onload = function() {
+            var loader = window.parent.document.getElementById('loader');
+            if (loader) {
+                loader.style.display = 'none';
+            }
+        };
+    </script>
+
+</body>
+</html>

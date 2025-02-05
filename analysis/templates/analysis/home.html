@@ -1,0 +1,35 @@
+<!-- analysis/templates/analysis/home.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {text-align: center;text-decoration-line: underline;background-color: #8ed4eb;}
+        h3 {text-decoration-line: underline;}
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f1f1f1;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+    <title>Budget Speech Analysis</title>
+</head>
+<body>
+    <h1>Budget Speech Analysis</h1>
+    <h3>About Us:</h3>
+    <p>Welcome to our interactive Budget speech data analysis platform, where insightful visualizations meet powerful analytics. This app enables you to explore, analyze, and understand complex budget data through intuitive visualizations, advanced sentiment analysis and text summarization tools.</p>
+    <ul>
+        <li><a href="{% url 'upload_dataset' %}">Upload New Dataset</a></li>
+        <li><a href="{% url 'view_datasets' %}">Budget Allocation Analysis</a></li>
+        <li><a href="{% url 'sentiment_analysis' %}">Sentiment Analysis</a></li>
+        <!-- <li><a href="{% url 'reports_dashboard' %}">Reports Dashboard</a></li> -->
+    </ul>
+
+    <footer>
+        <p>&copy; {% now "Y" %} Chaitanya Pramod Ingle. All rights reserved.</p>
+    </footer>
+</body>
+</html>
