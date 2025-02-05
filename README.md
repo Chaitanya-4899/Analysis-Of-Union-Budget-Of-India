@@ -63,8 +63,8 @@ The project consists of two main parts:
       ```
 7. Access the Application:- Open your web browser: 
     a) Go to `http://127.0.0.1:8000/admin/login/?next=/admin/` to access the Django admin page for my web app.
-       Credentials - username : your username
-                   - password : your password
+       Credentials - username : your_username
+                   - password : your_password
 
     b) `http://127.0.0.1:8000/` to access the Budget Speech analysis application.
 
@@ -72,7 +72,7 @@ The project consists of two main parts:
 ---
 ## Notes
 
-- No additional software is required**: The project is configured such that all necessary libraries are bundled within the project directories, so there's no need to install them separately or modify environment variables.
+- No additional software is required: The project is configured such that all necessary libraries are bundled within the project directories, so there's no need to install them separately or modify environment variables.
 - Running the Application: Ensure the virtual environment is activated each time before running the application.
 
 ---  
