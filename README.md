@@ -1,5 +1,5 @@
 # Budget Speech Analysis Project
-
+## 📌 Overview
 This project is an interactive Budget speech data analysis platform, where insightful visualizations meet powerful analytics. This app enables you to explore, analyze, and understand complex budget data through intuitive visualizations, advanced sentiment analysis and text summarization tools. It also consists of an interactive Trend Analysis dashboard created on Power BI.
 
 ---
@@ -11,7 +11,7 @@ The project consists of two main parts:
 - "TrendAnalysis.pbix": A Power BI file containing Trend analysis dashboard.
 
 ---
-## Getting Started
+## 🚀 Getting Started
 
 #### Prerequisites
 
@@ -77,7 +77,7 @@ The project consists of two main parts:
 - Running the Application: Ensure the virtual environment is activated each time before running the application.
 
 ---  
-## Troubleshooting
+## 🎯 Troubleshooting
 
 - nltk version Issues: If you encounter issues with `nltk` version during installation, you can manually install the latest version in the virtual environment.  
 
